@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98532EEE1CE2086000CBA064 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98532EEC1CE2086000CBA064 /* LiveViewController.m */; };
+		98532EEF1CE2086000CBA064 /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98532EED1CE2086000CBA064 /* LiveViewController.xib */; };
+		98532EFB1CE20B3400CBA064 /* line_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF21CE20B3400CBA064 /* line_blue.png */; };
+		98532EFC1CE20B3400CBA064 /* mic_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF31CE20B3400CBA064 /* mic_start.png */; };
+		98532EFD1CE20B3400CBA064 /* mic_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF41CE20B3400CBA064 /* mic_stop.png */; };
+		98532EFE1CE20B3400CBA064 /* play_change_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF51CE20B3400CBA064 /* play_change_screen.png */; };
+		98532EFF1CE20B3400CBA064 /* play_change_screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF61CE20B3400CBA064 /* play_change_screen2.png */; };
+		98532F001CE20B3400CBA064 /* record_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF71CE20B3400CBA064 /* record_select.png */; };
+		98532F011CE20B3400CBA064 /* round_point_brown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF81CE20B3400CBA064 /* round_point_brown@2x.png */; };
+		98532F021CE20B3400CBA064 /* snapshot_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EF91CE20B3400CBA064 /* snapshot_unselect.png */; };
+		98532F031CE20B3400CBA064 /* speak_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532EFA1CE20B3400CBA064 /* speak_select.png */; };
+		98532F051CE20B7600CBA064 /* time_stamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F041CE20B7600CBA064 /* time_stamp.png */; };
+		98DD7A071CE1F268004CF71B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A061CE1F268004CF71B /* main.m */; };
+		98DD7A0A1CE1F268004CF71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A091CE1F268004CF71B /* AppDelegate.m */; };
+		98DD7A101CE1F268004CF71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A0E1CE1F268004CF71B /* Main.storyboard */; };
+		98DD7A121CE1F268004CF71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A111CE1F268004CF71B /* Assets.xcassets */; };
+		98DD7A151CE1F268004CF71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A131CE1F268004CF71B /* LaunchScreen.storyboard */; };
+		98DD7A201CE1F268004CF71B /* SoDemonAppleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A1F1CE1F268004CF71B /* SoDemonAppleTests.m */; };
+		98DD7A2B1CE1F268004CF71B /* SoDemonAppleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A2A1CE1F268004CF71B /* SoDemonAppleUITests.m */; };
+		98DD7A431CE1F3D2004CF71B /* libSoSoCamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DD7A421CE1F3D2004CF71B /* libSoSoCamSDK.a */; };
+		98DD7A4F1CE1F3DF004CF71B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A461CE1F3DF004CF71B /* Info.plist */; };
+		98DD7A501CE1F3DF004CF71B /* loading_step0.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A471CE1F3DF004CF71B /* loading_step0.png */; };
+		98DD7A511CE1F3DF004CF71B /* loading_step1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A481CE1F3DF004CF71B /* loading_step1.png */; };
+		98DD7A521CE1F3DF004CF71B /* loading_step2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A491CE1F3DF004CF71B /* loading_step2.png */; };
+		98DD7A531CE1F3DF004CF71B /* start_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A4A1CE1F3DF004CF71B /* start_play.png */; };
+		98DD7A541CE1F3DF004CF71B /* verify_code.html in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A4B1CE1F3DF004CF71B /* verify_code.html */; };
+		98DD7A601CE20221004CF71B /* CameraListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A5F1CE20221004CF71B /* CameraListViewController.m */; };
+		98DD7A671CE202E6004CF71B /* AddCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A651CE202E6004CF71B /* AddCameraViewController.m */; };
+		98DD7A681CE202E6004CF71B /* AddCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A661CE202E6004CF71B /* AddCameraViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98DD7A1C1CE1F268004CF71B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98DD79FA1CE1F268004CF71B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98DD7A011CE1F268004CF71B;
+			remoteInfo = SoDemonApple;
+		};
+		98DD7A271CE1F268004CF71B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98DD79FA1CE1F268004CF71B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98DD7A011CE1F268004CF71B;
+			remoteInfo = SoDemonApple;
+		};
+		98DD7A561CE1F3DF004CF71B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98DD7A4C1CE1F3DF004CF71B /* SoSoCamSDKBundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A648E1AFCB4BA006C5EEF;
+			remoteInfo = SoSoCamSDKBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98532EEB1CE2086000CBA064 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = SOURCE_ROOT; };
+		98532EEC1CE2086000CBA064 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = SOURCE_ROOT; };
+		98532EED1CE2086000CBA064 /* LiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = SOURCE_ROOT; };
+		98532EF21CE20B3400CBA064 /* line_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_blue.png; sourceTree = "<group>"; };
+		98532EF31CE20B3400CBA064 /* mic_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_start.png; sourceTree = "<group>"; };
+		98532EF41CE20B3400CBA064 /* mic_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_stop.png; sourceTree = "<group>"; };
+		98532EF51CE20B3400CBA064 /* play_change_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_change_screen.png; sourceTree = "<group>"; };
+		98532EF61CE20B3400CBA064 /* play_change_screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_change_screen2.png; sourceTree = "<group>"; };
+		98532EF71CE20B3400CBA064 /* record_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_select.png; sourceTree = "<group>"; };
+		98532EF81CE20B3400CBA064 /* round_point_brown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_point_brown@2x.png"; sourceTree = "<group>"; };
+		98532EF91CE20B3400CBA064 /* snapshot_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_unselect.png; sourceTree = "<group>"; };
+		98532EFA1CE20B3400CBA064 /* speak_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speak_select.png; sourceTree = "<group>"; };
+		98532F041CE20B7600CBA064 /* time_stamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time_stamp.png; sourceTree = "<group>"; };
+		98DD7A021CE1F268004CF71B /* SoDemonApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoDemonApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DD7A061CE1F268004CF71B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98DD7A081CE1F268004CF71B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98DD7A091CE1F268004CF71B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98DD7A0F1CE1F268004CF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98DD7A111CE1F268004CF71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98DD7A141CE1F268004CF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98DD7A161CE1F268004CF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DD7A1B1CE1F268004CF71B /* SoDemonAppleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoDemonAppleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DD7A1F1CE1F268004CF71B /* SoDemonAppleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoDemonAppleTests.m; sourceTree = "<group>"; };
+		98DD7A211CE1F268004CF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DD7A261CE1F268004CF71B /* SoDemonAppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoDemonAppleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DD7A2A1CE1F268004CF71B /* SoDemonAppleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoDemonAppleUITests.m; sourceTree = "<group>"; };
+		98DD7A2C1CE1F268004CF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DD7A3A1CE1F3C5004CF71B /* IPCam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCam.h; sourceTree = "<group>"; };
+		98DD7A3B1CE1F3C5004CF71B /* IPCamMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCamMgr.h; sourceTree = "<group>"; };
+		98DD7A3C1CE1F3C5004CF71B /* IPCamVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCamVideoView.h; sourceTree = "<group>"; };
+		98DD7A3D1CE1F3C5004CF71B /* SoundWaveWifiSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundWaveWifiSetting.h; sourceTree = "<group>"; };
+		98DD7A3E1CE1F3C5004CF71B /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
+		98DD7A3F1CE1F3C5004CF71B /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		98DD7A401CE1F3C5004CF71B /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		98DD7A411CE1F3C5004CF71B /* WiFiMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiFiMatching.h; sourceTree = "<group>"; };
+		98DD7A421CE1F3D2004CF71B /* libSoSoCamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSoSoCamSDK.a; path = libSoSoCamSDK/libSoSoCamSDK.a; sourceTree = SOURCE_ROOT; };
+		98DD7A461CE1F3DF004CF71B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DD7A471CE1F3DF004CF71B /* loading_step0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_step0.png; sourceTree = "<group>"; };
+		98DD7A481CE1F3DF004CF71B /* loading_step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_step1.png; sourceTree = "<group>"; };
+		98DD7A491CE1F3DF004CF71B /* loading_step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_step2.png; sourceTree = "<group>"; };
+		98DD7A4A1CE1F3DF004CF71B /* start_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_play.png; sourceTree = "<group>"; };
+		98DD7A4B1CE1F3DF004CF71B /* verify_code.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = verify_code.html; sourceTree = "<group>"; };
+		98DD7A4C1CE1F3DF004CF71B /* SoSoCamSDKBundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SoSoCamSDKBundle.xcodeproj; sourceTree = "<group>"; };
+		98DD7A5E1CE20221004CF71B /* CameraListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraListViewController.h; path = ../../SoDemonApple/CameraListViewController.h; sourceTree = "<group>"; };
+		98DD7A5F1CE20221004CF71B /* CameraListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraListViewController.m; path = ../../SoDemonApple/CameraListViewController.m; sourceTree = "<group>"; };
+		98DD7A641CE202E5004CF71B /* AddCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCameraViewController.h; path = ../../AddCameraViewController.h; sourceTree = "<group>"; };
+		98DD7A651CE202E6004CF71B /* AddCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCameraViewController.m; path = ../../AddCameraViewController.m; sourceTree = "<group>"; };
+		98DD7A661CE202E6004CF71B /* AddCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddCameraViewController.xib; path = ../../AddCameraViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98DD79FF1CE1F268004CF71B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DD7A431CE1F3D2004CF71B /* libSoSoCamSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DD7A181CE1F268004CF71B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DD7A231CE1F268004CF71B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98532EF11CE20B3400CBA064 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				98532EF21CE20B3400CBA064 /* line_blue.png */,
+				98532EF31CE20B3400CBA064 /* mic_start.png */,
+				98532EF41CE20B3400CBA064 /* mic_stop.png */,
+				98532EF51CE20B3400CBA064 /* play_change_screen.png */,
+				98532EF61CE20B3400CBA064 /* play_change_screen2.png */,
+				98532EF71CE20B3400CBA064 /* record_select.png */,
+				98532EF81CE20B3400CBA064 /* round_point_brown@2x.png */,
+				98532EF91CE20B3400CBA064 /* snapshot_unselect.png */,
+				98532EFA1CE20B3400CBA064 /* speak_select.png */,
+				98532F041CE20B7600CBA064 /* time_stamp.png */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
+		};
+		98DD79F91CE1F268004CF71B = {
+			isa = PBXGroup;
+			children = (
+				98DD7A041CE1F268004CF71B /* SoDemonApple */,
+				98DD7A1E1CE1F268004CF71B /* SoDemonAppleTests */,
+				98DD7A291CE1F268004CF71B /* SoDemonAppleUITests */,
+				98DD7A031CE1F268004CF71B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98DD7A031CE1F268004CF71B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A021CE1F268004CF71B /* SoDemonApple.app */,
+				98DD7A1B1CE1F268004CF71B /* SoDemonAppleTests.xctest */,
+				98DD7A261CE1F268004CF71B /* SoDemonAppleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98DD7A041CE1F268004CF71B /* SoDemonApple */ = {
+			isa = PBXGroup;
+			children = (
+				98532EF11CE20B3400CBA064 /* images */,
+				98DD7A421CE1F3D2004CF71B /* libSoSoCamSDK.a */,
+				98DD7A391CE1F3C5004CF71B /* include */,
+				98DD7A441CE1F3DF004CF71B /* SoSoCamSDKBundle */,
+				98DD7A161CE1F268004CF71B /* Info.plist */,
+				98DD7A051CE1F268004CF71B /* Supporting Files */,
+			);
+			path = SoDemonApple;
+			sourceTree = "<group>";
+		};
+		98DD7A051CE1F268004CF71B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A081CE1F268004CF71B /* AppDelegate.h */,
+				98DD7A091CE1F268004CF71B /* AppDelegate.m */,
+				98DD7A0E1CE1F268004CF71B /* Main.storyboard */,
+				98DD7A131CE1F268004CF71B /* LaunchScreen.storyboard */,
+				98DD7A111CE1F268004CF71B /* Assets.xcassets */,
+				98DD7A061CE1F268004CF71B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98DD7A1E1CE1F268004CF71B /* SoDemonAppleTests */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A1F1CE1F268004CF71B /* SoDemonAppleTests.m */,
+				98DD7A211CE1F268004CF71B /* Info.plist */,
+			);
+			path = SoDemonAppleTests;
+			sourceTree = "<group>";
+		};
+		98DD7A291CE1F268004CF71B /* SoDemonAppleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A2A1CE1F268004CF71B /* SoDemonAppleUITests.m */,
+				98DD7A2C1CE1F268004CF71B /* Info.plist */,
+			);
+			path = SoDemonAppleUITests;
+			sourceTree = "<group>";
+		};
+		98DD7A391CE1F3C5004CF71B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A3A1CE1F3C5004CF71B /* IPCam.h */,
+				98DD7A3B1CE1F3C5004CF71B /* IPCamMgr.h */,
+				98DD7A3C1CE1F3C5004CF71B /* IPCamVideoView.h */,
+				98DD7A3D1CE1F3C5004CF71B /* SoundWaveWifiSetting.h */,
+				98DD7A3E1CE1F3C5004CF71B /* Storage.h */,
+				98DD7A3F1CE1F3C5004CF71B /* Util.h */,
+				98DD7A401CE1F3C5004CF71B /* WebService.h */,
+				98DD7A411CE1F3C5004CF71B /* WiFiMatching.h */,
+			);
+			name = include;
+			path = libSoSoCamSDK/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		98DD7A441CE1F3DF004CF71B /* SoSoCamSDKBundle */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A5E1CE20221004CF71B /* CameraListViewController.h */,
+				98DD7A5F1CE20221004CF71B /* CameraListViewController.m */,
+				98DD7A641CE202E5004CF71B /* AddCameraViewController.h */,
+				98DD7A651CE202E6004CF71B /* AddCameraViewController.m */,
+				98DD7A661CE202E6004CF71B /* AddCameraViewController.xib */,
+				98532EEB1CE2086000CBA064 /* LiveViewController.h */,
+				98532EEC1CE2086000CBA064 /* LiveViewController.m */,
+				98532EED1CE2086000CBA064 /* LiveViewController.xib */,
+				98DD7A451CE1F3DF004CF71B /* SoSoCamSDKBundle */,
+				98DD7A4C1CE1F3DF004CF71B /* SoSoCamSDKBundle.xcodeproj */,
+			);
+			name = SoSoCamSDKBundle;
+			path = libSoSoCamSDK/SoSoCamSDKBundle;
+			sourceTree = SOURCE_ROOT;
+		};
+		98DD7A451CE1F3DF004CF71B /* SoSoCamSDKBundle */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A461CE1F3DF004CF71B /* Info.plist */,
+				98DD7A471CE1F3DF004CF71B /* loading_step0.png */,
+				98DD7A481CE1F3DF004CF71B /* loading_step1.png */,
+				98DD7A491CE1F3DF004CF71B /* loading_step2.png */,
+				98DD7A4A1CE1F3DF004CF71B /* start_play.png */,
+				98DD7A4B1CE1F3DF004CF71B /* verify_code.html */,
+			);
+			path = SoSoCamSDKBundle;
+			sourceTree = "<group>";
+		};
+		98DD7A4D1CE1F3DF004CF71B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A571CE1F3DF004CF71B /* SoSoCamSDKBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98DD7A011CE1F268004CF71B /* SoDemonApple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98DD7A2F1CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonApple" */;
+			buildPhases = (
+				98DD79FE1CE1F268004CF71B /* Sources */,
+				98DD79FF1CE1F268004CF71B /* Frameworks */,
+				98DD7A001CE1F268004CF71B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoDemonApple;
+			productName = SoDemonApple;
+			productReference = 98DD7A021CE1F268004CF71B /* SoDemonApple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98DD7A1A1CE1F268004CF71B /* SoDemonAppleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98DD7A321CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonAppleTests" */;
+			buildPhases = (
+				98DD7A171CE1F268004CF71B /* Sources */,
+				98DD7A181CE1F268004CF71B /* Frameworks */,
+				98DD7A191CE1F268004CF71B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98DD7A1D1CE1F268004CF71B /* PBXTargetDependency */,
+			);
+			name = SoDemonAppleTests;
+			productName = SoDemonAppleTests;
+			productReference = 98DD7A1B1CE1F268004CF71B /* SoDemonAppleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98DD7A251CE1F268004CF71B /* SoDemonAppleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98DD7A351CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonAppleUITests" */;
+			buildPhases = (
+				98DD7A221CE1F268004CF71B /* Sources */,
+				98DD7A231CE1F268004CF71B /* Frameworks */,
+				98DD7A241CE1F268004CF71B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98DD7A281CE1F268004CF71B /* PBXTargetDependency */,
+			);
+			name = SoDemonAppleUITests;
+			productName = SoDemonAppleUITests;
+			productReference = 98DD7A261CE1F268004CF71B /* SoDemonAppleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98DD79FA1CE1F268004CF71B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = sandy;
+				TargetAttributes = {
+					98DD7A011CE1F268004CF71B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					98DD7A1A1CE1F268004CF71B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 98DD7A011CE1F268004CF71B;
+					};
+					98DD7A251CE1F268004CF71B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 98DD7A011CE1F268004CF71B;
+					};
+				};
+			};
+			buildConfigurationList = 98DD79FD1CE1F268004CF71B /* Build configuration list for PBXProject "SoDemonApple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98DD79F91CE1F268004CF71B;
+			productRefGroup = 98DD7A031CE1F268004CF71B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 98DD7A4D1CE1F3DF004CF71B /* Products */;
+					ProjectRef = 98DD7A4C1CE1F3DF004CF71B /* SoSoCamSDKBundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				98DD7A011CE1F268004CF71B /* SoDemonApple */,
+				98DD7A1A1CE1F268004CF71B /* SoDemonAppleTests */,
+				98DD7A251CE1F268004CF71B /* SoDemonAppleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		98DD7A571CE1F3DF004CF71B /* SoSoCamSDKBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SoSoCamSDKBundle.bundle;
+			remoteRef = 98DD7A561CE1F3DF004CF71B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98DD7A001CE1F268004CF71B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DD7A541CE1F3DF004CF71B /* verify_code.html in Resources */,
+				98532F051CE20B7600CBA064 /* time_stamp.png in Resources */,
+				98532F001CE20B3400CBA064 /* record_select.png in Resources */,
+				98532F031CE20B3400CBA064 /* speak_select.png in Resources */,
+				98DD7A4F1CE1F3DF004CF71B /* Info.plist in Resources */,
+				98532F021CE20B3400CBA064 /* snapshot_unselect.png in Resources */,
+				98DD7A151CE1F268004CF71B /* LaunchScreen.storyboard in Resources */,
+				98DD7A511CE1F3DF004CF71B /* loading_step1.png in Resources */,
+				98532F011CE20B3400CBA064 /* round_point_brown@2x.png in Resources */,
+				98DD7A521CE1F3DF004CF71B /* loading_step2.png in Resources */,
+				98532EEF1CE2086000CBA064 /* LiveViewController.xib in Resources */,
+				98532EFF1CE20B3400CBA064 /* play_change_screen2.png in Resources */,
+				98DD7A681CE202E6004CF71B /* AddCameraViewController.xib in Resources */,
+				98532EFB1CE20B3400CBA064 /* line_blue.png in Resources */,
+				98DD7A531CE1F3DF004CF71B /* start_play.png in Resources */,
+				98DD7A121CE1F268004CF71B /* Assets.xcassets in Resources */,
+				98532EFC1CE20B3400CBA064 /* mic_start.png in Resources */,
+				98DD7A501CE1F3DF004CF71B /* loading_step0.png in Resources */,
+				98DD7A101CE1F268004CF71B /* Main.storyboard in Resources */,
+				98532EFE1CE20B3400CBA064 /* play_change_screen.png in Resources */,
+				98532EFD1CE20B3400CBA064 /* mic_stop.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DD7A191CE1F268004CF71B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DD7A241CE1F268004CF71B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98DD79FE1CE1F268004CF71B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98532EEE1CE2086000CBA064 /* LiveViewController.m in Sources */,
+				98DD7A601CE20221004CF71B /* CameraListViewController.m in Sources */,
+				98DD7A671CE202E6004CF71B /* AddCameraViewController.m in Sources */,
+				98DD7A0A1CE1F268004CF71B /* AppDelegate.m in Sources */,
+				98DD7A071CE1F268004CF71B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DD7A171CE1F268004CF71B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DD7A201CE1F268004CF71B /* SoDemonAppleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DD7A221CE1F268004CF71B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DD7A2B1CE1F268004CF71B /* SoDemonAppleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98DD7A1D1CE1F268004CF71B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98DD7A011CE1F268004CF71B /* SoDemonApple */;
+			targetProxy = 98DD7A1C1CE1F268004CF71B /* PBXContainerItemProxy */;
+		};
+		98DD7A281CE1F268004CF71B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98DD7A011CE1F268004CF71B /* SoDemonApple */;
+			targetProxy = 98DD7A271CE1F268004CF71B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98DD7A0E1CE1F268004CF71B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98DD7A0F1CE1F268004CF71B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98DD7A131CE1F268004CF71B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98DD7A141CE1F268004CF71B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98DD7A2D1CE1F268004CF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98DD7A2E1CE1F268004CF71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98DD7A301CE1F268004CF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SoDemonApple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libSoSoCamSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonApple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98DD7A311CE1F268004CF71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SoDemonApple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libSoSoCamSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonApple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		98DD7A331CE1F268004CF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoDemonAppleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonAppleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoDemonApple.app/SoDemonApple";
+			};
+			name = Debug;
+		};
+		98DD7A341CE1F268004CF71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoDemonAppleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonAppleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoDemonApple.app/SoDemonApple";
+			};
+			name = Release;
+		};
+		98DD7A361CE1F268004CF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoDemonAppleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonAppleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoDemonApple;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		98DD7A371CE1F268004CF71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoDemonAppleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonAppleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoDemonApple;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98DD79FD1CE1F268004CF71B /* Build configuration list for PBXProject "SoDemonApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DD7A2D1CE1F268004CF71B /* Debug */,
+				98DD7A2E1CE1F268004CF71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98DD7A2F1CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DD7A301CE1F268004CF71B /* Debug */,
+				98DD7A311CE1F268004CF71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98DD7A321CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonAppleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DD7A331CE1F268004CF71B /* Debug */,
+				98DD7A341CE1F268004CF71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98DD7A351CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonAppleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DD7A361CE1F268004CF71B /* Debug */,
+				98DD7A371CE1F268004CF71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98DD79FA1CE1F268004CF71B /* Project object */;
+}
