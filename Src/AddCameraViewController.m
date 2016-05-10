@@ -7,6 +7,9 @@
 //
 
 #import "AddCameraViewController.h"
+#import "IPCam.h"
+#import "IPCamMgr.h"
+#import "Storage.h"
 
 @interface AddCameraViewController (){
     
@@ -24,15 +27,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.navigationController.title = @"Add Camera";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)buttonSaveAction:(id)sender {
+    [[Storage get_share]add_camera:cameraID.text alias:cameraAlias.text user:@"admin" pwd:cameraPassword.text https:NO sosocam_id:nil model:0 master:NO];
+    
+    [[IPCamMgr get_share] add_camera:cameraID.text alias:cameraAlias.text user:@"admin" pwd:cameraPassword.text https:NO];
+        
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

@@ -77,11 +77,11 @@
                                 <mask key="constraints">
                                     <include reference="RNf-nV-KdN"/>
                                     <include reference="Xem-yh-HQZ"/>
-                                    <include reference="Dmq-OK-59W"/>
-                                    <include reference="GBy-dL-WSB"/>
                                     <include reference="HZU-5a-1FP"/>
                                     <include reference="IAp-SM-7vi"/>
                                     <include reference="NnY-pk-tbr"/>
+                                    <include reference="Dmq-OK-59W"/>
+                                    <include reference="GBy-dL-WSB"/>
                                 </mask>
                             </variation>
                         </view>
@@ -135,11 +135,11 @@
                                 <mask key="constraints">
                                     <include reference="P0r-HY-Prj"/>
                                     <include reference="gUN-6n-Xrr"/>
-                                    <include reference="6pm-oq-g8N"/>
-                                    <include reference="OSh-ve-CWt"/>
                                     <include reference="2tc-qQ-O2m"/>
                                     <include reference="Uph-dL-GdE"/>
                                     <include reference="rbn-AJ-ean"/>
+                                    <include reference="6pm-oq-g8N"/>
+                                    <include reference="OSh-ve-CWt"/>
                                 </mask>
                             </variation>
                         </view>

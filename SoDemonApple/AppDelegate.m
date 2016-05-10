@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "IPCamMgr.h"
+#import "IPCam.h"
+#import "Storage.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +18,20 @@
 @implementation AppDelegate
 
 
+-(void)loadAllCameras{
+    NSArray * ipcamList = [[Storage get_share]get_cameras_list];
+    IPCamMgr * ipcamMgr;
+    IPCam * cam;
+    for (int i = 0; i< ipcamList.count; i++) {
+        NSDictionary * camera = [ipcamList objectAtIndex:i];
+        cam = [ipcamMgr add_camera:[camera objectForKey:@"camera_id"] alias:[camera objectForKey:@"alias"] user:[camera objectForKey:@"user"] pwd:[camera objectForKey:@"pwd"] https:[[camera objectForKey:@"https"] boolValue]];
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [IPCamMgr  get_share];
+    [[Storage get_share]update_user:@"sandy" login_type:0 auth_name:nil auth_pwd:nil alias:nil];
+    [[Storage get_share]set_current_user:@"sandy"];
+    [self loadAllCameras];
     return YES;
 }
 
@@ -26,8 +41,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[IPCamMgr get_share]stop];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -35,11 +49,13 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[IPCamMgr get_share]start];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+
+    [IPCamMgr release_share];
 }
 
 @end
