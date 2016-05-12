@@ -9,6 +9,7 @@
 #import "CameraListViewController.h"
 #import "CameraListTableViewCell.h"
 #import "AddCameraViewController.h"
+#import "LiveViewController.h"
 
 @interface CameraListViewController (){
     NSArray *ipcamList;
@@ -35,12 +36,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ipcamList = [[IPCamMgr get_share]get_cameras_list];
-    self.navigationController.title = @"Camera List";
+    self.navigationItem.title = @"Camera List";
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    ipcamList = [[IPCamMgr get_share]get_cameras_list];
     [self addDelegateToEveryIpcam];
+    [self.tabelViewCameraList reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -79,7 +81,120 @@
 }
 - (NSIndexPath *)tableView:(UITableView *)tableView
   willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LiveViewController * liveVC = [[LiveViewController alloc]initWithIPCam:[ipcamList objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:liveVC animated:YES];
     return nil;
+}
+
+#pragma mark IPCamDelegate
+-(void)on_alias_changed:(id)ipcam{
+    
+}
+
+-(void)on_cover_changed:(id)ipcam{
+    
+}
+
+-(void)on_status_changed:(id)ipcam{
+    [self.tabelViewCameraList reloadData];
+}
+
+-(void)on_video_status_changed:(id)ipcam{
+    
+}
+-(void)on_audio_status_changed:(id)ipcam{
+    
+}
+
+-(void)on_speak_status_changed:(id)ipcam{
+    
+}
+
+-(void)on_tf_record_status_changed:(id)ipcam{
+    
+}
+
+-(void)on_tf_record_event:(id)ipcam
+               new_record:(BOOL)new_record
+                record_id:(int32_t)record_id
+                    error:(BOOL)error{
+    
+}
+
+-(void)on_camera_tf_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_wifi_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_alarm_changed:(id)ipcam{
+    
+}
+
+-(void)on_bell_alarm_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_recording_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_can_upgrade:(id)ipcam{
+    
+}
+
+-(void)on_camera_power_down_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_arm_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_dijia_power_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_dijia_speed_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_dijia_mute_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_dijia_status_changed:(id)ipcam{
+    
+}
+
+-(void)on_statistic:(id)ipcam{
+    
+}
+
+-(void)on_can_set_video_performance:(id)ipcam{
+    
+}
+
+-(void)on_camera_temperature_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_meijing_play_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_meijing_led_changed:(id)ipcam{
+    
+}
+
+-(void)on_camera_sessions_change:(id)ipcam{
+    
+}
+
+-(void)on_camera_capacity:(id)ipcam{
+    
 }
 
 @end

@@ -20,7 +20,7 @@
 
 -(void)loadAllCameras{
     NSArray * ipcamList = [[Storage get_share]get_cameras_list];
-    IPCamMgr * ipcamMgr;
+    IPCamMgr * ipcamMgr = [IPCamMgr get_share];
     IPCam * cam;
     for (int i = 0; i< ipcamList.count; i++) {
         NSDictionary * camera = [ipcamList objectAtIndex:i];

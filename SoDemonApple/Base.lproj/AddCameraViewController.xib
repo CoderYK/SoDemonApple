@@ -11,6 +11,7 @@
                 <outlet property="cameraAlias" destination="5EG-mO-0U6" id="2KX-cW-975"/>
                 <outlet property="cameraID" destination="xu7-OO-9bR" id="923-Dr-fKs"/>
                 <outlet property="cameraPassword" destination="jsh-M0-rLP" id="peo-MR-pF7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="UKn-Yh-4DP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

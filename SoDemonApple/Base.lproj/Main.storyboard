@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Camera List View Controller-->
@@ -28,20 +29,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cLA-w7-385" firstAttribute="top" secondItem="55K-2e-XCs" secondAttribute="top" id="2hs-iH-mbE"/>
                             <constraint firstAttribute="trailing" secondItem="cLA-w7-385" secondAttribute="trailing" id="PYy-ru-hpM"/>
+                            <constraint firstItem="cLA-w7-385" firstAttribute="bottom" secondItem="55K-2e-XCs" secondAttribute="bottomMargin" id="Pfh-Ux-ffA"/>
                             <constraint firstItem="cLA-w7-385" firstAttribute="leading" secondItem="55K-2e-XCs" secondAttribute="leading" id="UTp-W0-8nm"/>
-                            <constraint firstItem="1MB-rl-li9" firstAttribute="top" secondItem="cLA-w7-385" secondAttribute="bottom" id="qpV-hY-h8M"/>
-                            <constraint firstItem="cLA-w7-385" firstAttribute="top" secondItem="6VZ-BN-TOS" secondAttribute="bottom" id="rt8-0e-9t7"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="cLA-w7-385"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="2hs-iH-mbE"/>
                                 <include reference="PYy-ru-hpM"/>
+                                <include reference="Pfh-Ux-ffA"/>
                                 <include reference="UTp-W0-8nm"/>
-                                <include reference="rt8-0e-9t7"/>
-                                <include reference="qpV-hY-h8M"/>
                             </mask>
                         </variation>
                     </view>

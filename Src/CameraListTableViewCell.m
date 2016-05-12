@@ -23,17 +23,26 @@
 
 -(void)showCameraInfo:(IPCam*)ipcam{
     
-    labelCamAlias.text = [ipcam alias];
-    labelCamID.text = [ipcam camera_id];
+    labelCamAlias.text = [NSString stringWithFormat:@"name:%@",[ipcam alias]];
+    labelCamID.text = [NSString stringWithFormat:@"ID:%@",[ipcam camera_id]];
     if ([ipcam status] == IPCAM_STATUS_CONNECTED ) {
-        labelCamStatus.text = @"connect success";
+        labelCamStatus.text = @"status:connect success";
     }
 
     else if ([ipcam status] == IPCAM_STATUS_IDLE ){
-        labelCamStatus.text = @"connect fail";
+        if ([ipcam error] == IPCAM_ERROR_BAD_AUTH ) {
+            labelCamStatus.text = @"status:connect fail,password error";
+
+        }
+        else if ([ipcam error] == IPCAM_ERROR_P2P_DEVICE_OFFLINE) {
+            labelCamStatus.text = @"status:connect fail,device offline";
+        }
+        else{
+            labelCamStatus.text = @"status:connect fail,other error";
+        }
     }
     else{
-        labelCamStatus.text = @"connecting...";
+        labelCamStatus.text = @"status:connecting...";
     }
 }
 
