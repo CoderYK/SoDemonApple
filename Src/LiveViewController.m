@@ -9,7 +9,6 @@
 #import "LiveViewController.h"
 
 @interface LiveViewController (){
-    IPCam*liveCam;
     
     __weak IBOutlet IPCamVideoView *viewVideo;
     __weak IBOutlet UIButton *buttonMic;
@@ -19,6 +18,8 @@
     __weak IBOutlet UIButton *buttonSpeaker;
     
     __weak IBOutlet UILabel *labelTips;
+    IPCam*liveCam;
+
     
 }
 

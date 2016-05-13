@@ -10,6 +10,7 @@
 #import "CameraListTableViewCell.h"
 #import "AddCameraViewController.h"
 #import "LiveViewController.h"
+#import "lanCameraViewController.h"
 
 @interface CameraListViewController (){
     NSArray *ipcamList;
@@ -52,7 +53,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
+- (IBAction)buttonSearchAction:(id)sender {
+    lanCameraViewController* lanVC = [[lanCameraViewController alloc]init];
+    [self.navigationController pushViewController:lanVC animated:YES];
+}
 - (IBAction)buttonAddAction:(id)sender {
     AddCameraViewController* addVC = [[AddCameraViewController alloc]init];
     [self.navigationController pushViewController:addVC animated:YES];

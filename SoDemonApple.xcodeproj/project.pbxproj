@@ -37,6 +37,10 @@
 		98532F481CE4C7C600CBA064 /* snapshot_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F3E1CE4C7C600CBA064 /* snapshot_unselect.png */; };
 		98532F4A1CE4C7C600CBA064 /* speak_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F401CE4C7C600CBA064 /* speak_stop.png */; };
 		98532F4C1CE4C81600CBA064 /* speak_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F4B1CE4C81600CBA064 /* speak_start.png */; };
+		9865123D1CE5F7FE007D8F92 /* lanCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9865123B1CE5F7FE007D8F92 /* lanCameraViewController.m */; };
+		9865123E1CE5F7FE007D8F92 /* lanCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9865123C1CE5F7FE007D8F92 /* lanCameraViewController.xib */; };
+		986512421CE5F829007D8F92 /* lanCameraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 986512401CE5F829007D8F92 /* lanCameraTableViewCell.m */; };
+		986512431CE5F829007D8F92 /* lanCameraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986512411CE5F829007D8F92 /* lanCameraTableViewCell.xib */; };
 		98DD7A071CE1F268004CF71B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A061CE1F268004CF71B /* main.m */; };
 		98DD7A0A1CE1F268004CF71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A091CE1F268004CF71B /* AppDelegate.m */; };
 		98DD7A101CE1F268004CF71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A0E1CE1F268004CF71B /* Main.storyboard */; };
@@ -91,6 +95,12 @@
 		98532F3E1CE4C7C600CBA064 /* snapshot_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_unselect.png; sourceTree = "<group>"; };
 		98532F401CE4C7C600CBA064 /* speak_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speak_stop.png; sourceTree = "<group>"; };
 		98532F4B1CE4C81600CBA064 /* speak_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speak_start.png; sourceTree = "<group>"; };
+		9865123A1CE5F7FE007D8F92 /* lanCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lanCameraViewController.h; path = Src/lanCameraViewController.h; sourceTree = SOURCE_ROOT; };
+		9865123B1CE5F7FE007D8F92 /* lanCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lanCameraViewController.m; path = Src/lanCameraViewController.m; sourceTree = SOURCE_ROOT; };
+		9865123C1CE5F7FE007D8F92 /* lanCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = lanCameraViewController.xib; path = Src/lanCameraViewController.xib; sourceTree = SOURCE_ROOT; };
+		9865123F1CE5F829007D8F92 /* lanCameraTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lanCameraTableViewCell.h; path = Src/lanCameraTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		986512401CE5F829007D8F92 /* lanCameraTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lanCameraTableViewCell.m; path = Src/lanCameraTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		986512411CE5F829007D8F92 /* lanCameraTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = lanCameraTableViewCell.xib; path = Src/lanCameraTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		98DD7A021CE1F268004CF71B /* SoDemonApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoDemonApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DD7A061CE1F268004CF71B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98DD7A081CE1F268004CF71B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +142,7 @@
 		740BD6181CE22C3500E16761 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				986512381CE5F716007D8F92 /* LanSearch */,
 				98532F361CE4C7C600CBA064 /* images */,
 				740BD62B1CE22C6900E16761 /* LiveVideo */,
 				740BD62A1CE22C5200E16761 /* AddCamera */,
@@ -221,6 +232,20 @@
 			);
 			path = images;
 			sourceTree = SOURCE_ROOT;
+		};
+		986512381CE5F716007D8F92 /* LanSearch */ = {
+			isa = PBXGroup;
+			children = (
+				9865123F1CE5F829007D8F92 /* lanCameraTableViewCell.h */,
+				986512401CE5F829007D8F92 /* lanCameraTableViewCell.m */,
+				986512411CE5F829007D8F92 /* lanCameraTableViewCell.xib */,
+				9865123A1CE5F7FE007D8F92 /* lanCameraViewController.h */,
+				9865123B1CE5F7FE007D8F92 /* lanCameraViewController.m */,
+				9865123C1CE5F7FE007D8F92 /* lanCameraViewController.xib */,
+			);
+			name = LanSearch;
+			path = ../images;
+			sourceTree = "<group>";
 		};
 		98DD79F91CE1F268004CF71B = {
 			isa = PBXGroup;
@@ -362,6 +387,7 @@
 			files = (
 				98532F471CE4C7C600CBA064 /* record_stop.png in Resources */,
 				98532F4C1CE4C81600CBA064 /* speak_start.png in Resources */,
+				986512431CE5F829007D8F92 /* lanCameraTableViewCell.xib in Resources */,
 				98532F431CE4C7C600CBA064 /* mic_stop.png in Resources */,
 				740BD6411CE2309300E16761 /* start_play.png in Resources */,
 				740BD63D1CE2309300E16761 /* Info.plist in Resources */,
@@ -372,6 +398,7 @@
 				98532F231CE376AB00CBA064 /* CameraListTableViewCell.xib in Resources */,
 				740BD63E1CE2309300E16761 /* loading_step0.png in Resources */,
 				98532F4A1CE4C7C600CBA064 /* speak_stop.png in Resources */,
+				9865123E1CE5F7FE007D8F92 /* lanCameraViewController.xib in Resources */,
 				98532F481CE4C7C600CBA064 /* snapshot_unselect.png in Resources */,
 				740BD63F1CE2309300E16761 /* loading_step1.png in Resources */,
 				98DD7A151CE1F268004CF71B /* LaunchScreen.storyboard in Resources */,
@@ -394,7 +421,9 @@
 			files = (
 				740BD64A1CE2318D00E16761 /* CameraListTableViewCell.m in Sources */,
 				740BD6271CE22C3500E16761 /* LiveViewController.m in Sources */,
+				986512421CE5F829007D8F92 /* lanCameraTableViewCell.m in Sources */,
 				98DD7A0A1CE1F268004CF71B /* AppDelegate.m in Sources */,
+				9865123D1CE5F7FE007D8F92 /* lanCameraViewController.m in Sources */,
 				98DD7A071CE1F268004CF71B /* main.m in Sources */,
 				740BD6231CE22C3500E16761 /* AddCameraViewController.m in Sources */,
 				740BD6311CE22E8700E16761 /* CameraListViewController.m in Sources */,

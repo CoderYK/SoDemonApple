@@ -7,7 +7,6 @@
 //
 
 #import "AddCameraViewController.h"
-#import "IPCam.h"
 #import "IPCamMgr.h"
 #import "Storage.h"
 
@@ -18,6 +17,8 @@
     __weak IBOutlet UITextField *textFieldCamUser;
     
     __weak IBOutlet UITextField *textFieldCamPwd;
+    
+    NSString*lanCamID;
 
 }
 
@@ -25,9 +26,20 @@
 
 @implementation AddCameraViewController
 
+-(instancetype)initWithIPCam:(NSString *)camID;
+{
+    self = [super init];
+    if (! self)
+        return nil;
+    
+    lanCamID = camID;
+    
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title =  @"Add Camera";
+    textFieldCamID.text = lanCamID;
 }
 
 - (void)didReceiveMemoryWarning {

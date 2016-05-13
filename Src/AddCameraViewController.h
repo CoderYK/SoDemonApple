@@ -10,4 +10,5 @@
 
 @interface AddCameraViewController : UIViewController
 
+-(instancetype)initWithIPCam:(NSString *)camID;
 @end

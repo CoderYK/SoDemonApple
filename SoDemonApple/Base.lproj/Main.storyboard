@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Camera List View Controller-->
@@ -78,11 +79,18 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="pJn-It-WS4">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="ORa-O4-vF6">
-                            <connections>
-                                <action selector="buttonAddAction:" destination="8uz-ch-BoC" id="O5v-P1-pDJ"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" systemItem="add" id="ORa-O4-vF6">
+                                <connections>
+                                    <action selector="buttonAddAction:" destination="8uz-ch-BoC" id="O5v-P1-pDJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="Fys-F2-8ry">
+                                <connections>
+                                    <action selector="buttonSearchAction:" destination="8uz-ch-BoC" id="MiQ-FI-YKg"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tabelViewCameraList" destination="cLA-w7-385" id="p0A-Te-zff"/>
