@@ -99,7 +99,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLt-N7-XTv" userLabel="hd">
                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                     <variation key="heightClass=regular" misplaced="YES">
                                         <rect key="frame" x="234" y="16" width="22" height="18"/>
@@ -136,7 +136,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veF-Pm-CGb" userLabel="60">
                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                     <variation key="heightClass=regular" misplaced="YES">
                                         <rect key="frame" x="234" y="16" width="22" height="18"/>
@@ -296,7 +296,8 @@
                                                     <state key="selected" image="record_start.png">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="-1" width="64" height="64"/>
                                                         <mask key="constraints">
                                                             <include reference="1G8-WP-tfB"/>
                                                             <include reference="4Vc-iQ-6Zf"/>
@@ -311,6 +312,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.63529411759999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="14" y="55" width="52" height="20"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -327,7 +331,8 @@
                                                     <integer key="value" value="40"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
-                                            <variation key="heightClass=regular-widthClass=compact">
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="12" y="61" width="80" height="80"/>
                                                 <mask key="subviews">
                                                     <include reference="X8t-iH-C2K"/>
                                                     <include reference="9u1-wd-tFr"/>
@@ -350,6 +355,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.63529411759999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="13" y="106" width="124" height="20"/>
+                                                    </variation>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb1-k8-qI9">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -366,7 +374,8 @@
                                                     <state key="selected" image="speak_start.png">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="-9" width="150" height="150"/>
                                                         <mask key="constraints">
                                                             <include reference="ZSC-fF-UGe"/>
                                                             <include reference="qeg-fF-pnz"/>
@@ -391,7 +400,8 @@
                                                     <integer key="value" value="75"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
-                                            <variation key="heightClass=regular-widthClass=compact">
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="125" y="26" width="150" height="150"/>
                                                 <mask key="subviews">
                                                     <include reference="Du9-Ky-Vfc"/>
                                                     <include reference="eb1-k8-qI9"/>
@@ -424,7 +434,8 @@
                                                     <state key="selected">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="-1" width="64" height="64"/>
                                                         <mask key="constraints">
                                                             <include reference="Ywr-JS-KSI"/>
                                                             <include reference="uRS-lG-Gyd"/>
@@ -439,6 +450,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.63529411759999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="55" width="65" height="18"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -455,7 +469,8 @@
                                                     <integer key="value" value="40"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
-                                            <variation key="heightClass=regular-widthClass=compact">
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="308" y="61" width="80" height="80"/>
                                                 <mask key="subviews">
                                                     <include reference="9lt-Ip-pTw"/>
                                                     <include reference="2Kv-Mh-pW6"/>
@@ -501,7 +516,7 @@
                                         </mask>
                                     </variation>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LS-Ks-FQa" userLabel="album">
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LS-Ks-FQa" userLabel="album">
                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                     <color key="backgroundColor" red="0.0" green="0.63529411759999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
@@ -523,7 +538,7 @@
                                         </mask>
                                     </variation>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkX-dc-KNR">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkX-dc-KNR">
                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                     <color key="backgroundColor" red="0.0" green="0.63529411759999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -561,10 +576,10 @@
                                     <include reference="L3x-DO-slS"/>
                                     <include reference="qVD-My-iNe"/>
                                     <include reference="xzA-xf-05j"/>
-                                    <include reference="GNr-qf-30f"/>
-                                    <include reference="fra-gc-A3T"/>
                                     <include reference="BDX-Ck-0Z9"/>
                                     <include reference="IT5-Ej-C6n"/>
+                                    <include reference="GNr-qf-30f"/>
+                                    <include reference="fra-gc-A3T"/>
                                 </mask>
                             </variation>
                         </view>

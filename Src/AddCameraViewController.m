@@ -13,11 +13,11 @@
 
 @interface AddCameraViewController (){
     
-    __weak IBOutlet UITextField *cameraID;
+    __weak IBOutlet UITextField *textFieldCamID;
 
-    __weak IBOutlet UITextField *cameraAlias;
+    __weak IBOutlet UITextField *textFieldCamUser;
     
-    __weak IBOutlet UITextField *cameraPassword;
+    __weak IBOutlet UITextField *textFieldCamPwd;
 
 }
 
@@ -35,14 +35,15 @@
 }
 
 - (IBAction)buttonSaveAction:(id)sender {
+        
     /*
      *添加到本地
      */
-    [[Storage get_share]add_camera:cameraID.text alias:cameraAlias.text user:@"admin" pwd:cameraPassword.text https:NO sosocam_id:nil model:0 master:NO];
+    [[Storage get_share]add_camera:textFieldCamID.text alias:nil user:textFieldCamUser.text pwd:textFieldCamPwd.text https:NO sosocam_id:nil model:0 master:NO];//
     /*
      *添加到IPCamMgr便于批量管理
      */
-    [[IPCamMgr get_share] add_camera:cameraID.text alias:cameraAlias.text user:@"admin" pwd:cameraPassword.text https:NO];
+    [[IPCamMgr get_share] add_camera:textFieldCamID.text alias:nil user:textFieldCamUser.text pwd:textFieldCamPwd.text https:NO];
     
     /*
      *添加到服务器
@@ -62,5 +63,25 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [textFieldCamUser resignFirstResponder];
+    [textFieldCamID resignFirstResponder];
+    [textFieldCamPwd resignFirstResponder];
+}
 
+
+#pragma mark  UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField              // called when 'return' key pressed. return NO
+{
+    if ([textField isEqual:textFieldCamUser]) {
+        [textFieldCamUser resignFirstResponder];
+    }
+    else if([textField isEqual:textFieldCamID] ){
+        [textFieldCamID resignFirstResponder];
+    }
+    else if ([textField isEqual:textFieldCamPwd]){
+        [textFieldCamPwd resignFirstResponder];
+    }
+    return YES;
+}
 @end

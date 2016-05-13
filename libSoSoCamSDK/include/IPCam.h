@@ -14,7 +14,7 @@
 #define STREAM_HD                           1
 
 typedef enum {
-    IPCAM_ERROR_NO_ERROR,
+    IPCAM_ERROR_NO_ERROR, 
     IPCAM_ERROR_UNKNOWN,
     IPCAM_ERROR_INTERNAL_ERROR,
     IPCAM_ERROR_BAD_PARAM,

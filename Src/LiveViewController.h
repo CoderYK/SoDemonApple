@@ -10,7 +10,7 @@
 #import "IPCam.h"
 #import "IPCamVideoView.h"
 
-@interface LiveViewController : UIViewController<IPCamDelegate,IPCamVideoViewDelegate>
+@interface LiveViewController : UIViewController<IPCamDelegate,IPCamVideoViewDelegate,UITextFieldDelegate>
 
 -(instancetype)initWithIPCam:(IPCam *)ipcam;
 

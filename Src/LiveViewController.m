@@ -64,12 +64,24 @@
     [liveCam sensor_control:IPCAM_SENSOR_CMD_POWER_FREQUENCY param:1];
     
 }
-
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [liveCam stop_audio];
+    [liveCam stop_video];
+    [liveCam stop_speak];
+    [liveCam stop_local_record];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark buttonAction
 - (IBAction)buttonMicAction:(id)sender {
+    if ([liveCam status] != IPCAM_STATUS_CONNECTED) {
+        labelTips.text = @"Tips:device disconnect";
+        return;
+    }
+    
     if ([liveCam audio_status] == IPCAM_PLAY_STATUS_STOPPED) {
         [liveCam play_audio];
     }
@@ -78,6 +90,10 @@
     }
 }
 - (IBAction)buttonSDWihtHDAction:(UIButton*)sender {
+    if ([liveCam status] != IPCAM_STATUS_CONNECTED) {
+        labelTips.text = @"Tips:device disconnect";
+        return;
+    }
     [liveCam stop_video];
     sender.selected = !sender.selected;
     if (sender.selected) {
@@ -90,6 +106,10 @@
     }
 }
 - (IBAction)buttonHZAction:(UIButton*)sender {
+    if ([liveCam status] != IPCAM_STATUS_CONNECTED) {
+        labelTips.text = @"Tips:device disconnect";
+        return;
+    }
     sender.selected = !sender.selected;
     /*
      *设置室外如下，此处就不列举了
@@ -107,6 +127,10 @@
 }
 
 - (IBAction)buttonRecordAction:(UIButton*)sender {
+    if ([liveCam status] != IPCAM_STATUS_CONNECTED) {
+        labelTips.text = @"Tips:device disconnect";
+        return;
+    }
     if (!sender.selected) {
         if (IPCAM_ERROR_NO_ERROR == [liveCam start_local_record]) {
             sender.selected = YES;
@@ -121,6 +145,10 @@
 
 }
 - (IBAction)buttonSpeakerAction:(id)sender {
+    if ([liveCam status] != IPCAM_STATUS_CONNECTED) {
+        labelTips.text = @"Tips:device disconnect";
+        return;
+    }
     if ([liveCam speak_status] == IPCAM_PLAY_STATUS_STOPPED) {
         [liveCam start_speak];
     }
@@ -129,6 +157,10 @@
     }
 }
 - (IBAction)buttonSnapshotAction:(id)sender {
+    if ([liveCam status] != IPCAM_STATUS_CONNECTED) {
+        labelTips.text = @"Tips:device disconnect";
+        return;
+    }
     [liveCam snapshot];
     labelTips.text = @"Tips:camera snapshot success";
 

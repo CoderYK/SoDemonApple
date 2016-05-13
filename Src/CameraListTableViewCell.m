@@ -9,9 +9,7 @@
 #import "CameraListTableViewCell.h"
 
 @implementation CameraListTableViewCell{
-    
-    __weak IBOutlet UILabel *labelCamAlias;
-    
+        
     __weak IBOutlet UILabel *labelCamStatus;
 
     __weak IBOutlet UILabel *labelCamID;
@@ -23,7 +21,6 @@
 
 -(void)showCameraInfo:(IPCam*)ipcam{
     
-    labelCamAlias.text = [NSString stringWithFormat:@"name:%@",[ipcam alias]];
     labelCamID.text = [NSString stringWithFormat:@"ID:%@",[ipcam camera_id]];
     if ([ipcam status] == IPCAM_STATUS_CONNECTED ) {
         labelCamStatus.text = @"status:connect success";
